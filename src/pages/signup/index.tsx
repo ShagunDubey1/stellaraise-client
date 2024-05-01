@@ -11,13 +11,39 @@ export default function __signup() {
   const toggleVisibility = () => setIsVisible(!isVisible)
 
   return (
-    <div className=" w-full relative flex justify-center items-center h-full">
-      <div className=' px-4'>
+    <div className=" w-full relative flex justify-center gap-16 items-center h-full">
+      <div className=" px-6">
         <h3 className=" uppercase text-lg font-medium">Join for free</h3>
-        <h2 className=' text-3xl font-semibold'>
+        <h2 className=" text-3xl font-semibold capitalize mb-6">
           Empower NGOs and NPOs <br /> in Web 3.0 with our cutting-edge <br />
-          <span>crowdfunding donation app!</span>
+          <span className=" text-primary">crowdfunding donation app!</span>
         </h2>
+        <p>
+          Get started with the easiest and most secure website <br />
+          to start your journey
+        </p>
+
+        <div className=" flex gap-4 mt-8">
+          <Link to={'/login'}>
+            <Button
+              color="primary"
+              variant="shadow"
+              size="lg"
+              className=" text-base font-semibold mt-4"
+            >
+              Log In
+            </Button>
+          </Link>
+
+          <Button
+            color="primary"
+            variant="bordered"
+            size="lg"
+            className=" text-base font-semibold mt-4"
+          >
+            Explore
+          </Button>
+        </div>
       </div>
 
       <div>
