@@ -17,9 +17,9 @@ export default {
           layout: {
             disabledOpacity: '0.3',
             radius: {
-              small: '2px',
-              medium: '4px',
-              large: '6px',
+              small: '14px',
+              medium: '16px',
+              large: '18px',
             },
             borderWidth: {
               small: '1px',
