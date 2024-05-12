@@ -18,6 +18,7 @@ import { FaUserCog } from 'react-icons/fa'
 import { HiOutlineLogout } from 'react-icons/hi'
 import { Metamask_Icon } from '../../../assets/icons'
 import { useState } from 'react'
+import { GiDiamondTrophy } from 'react-icons/gi'
 
 export default function __header() {
   const [isConnected, setIsConnected] = useState<boolean>(false)
@@ -115,6 +116,9 @@ export default function __header() {
                 startContent={<PiBuildingApartmentFill />}
               >
                 My Organization
+              </DropdownItem>
+              <DropdownItem className=" p-3" startContent={<GiDiamondTrophy />}>
+                My Rewards
               </DropdownItem>
               <DropdownItem className=" p-3" startContent={<FaUserCog />}>
                 Profile

@@ -10,7 +10,7 @@ import { BsBuildingFillAdd } from 'react-icons/bs'
 
 export default function __organization() {
   return (
-    <div className=" flex relative items-start px-4 gap-[1.6%]">
+    <div className=" flex relative items-start px-4 gap-[1.6%] py-2">
       <Card isFooterBlurred className=" h-[300px] w-[32%]">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
