@@ -63,10 +63,11 @@ export default function __signup() {
               color="primary"
               classNames={{
                 innerWrapper: ['px-2'],
-                label: ['px-2', 'text-default-400'],
+                label: ['px-2', 'text-default-700'],
+                inputWrapper: ['border-white'],
               }}
               endContent={
-                <FaUser className="text-xl self-center text-default-400 pointer-events-none " />
+                <FaUser className="text-xl self-center text-default-700 pointer-events-none " />
               }
             />
             <Input
@@ -77,10 +78,11 @@ export default function __signup() {
               color="primary"
               classNames={{
                 innerWrapper: ['px-2'],
-                label: ['px-2', 'text-default-400'],
+                label: ['px-2', 'text-default-700'],
+                inputWrapper: ['border-white'],
               }}
               endContent={
-                <FaUser className="text-xl self-center text-default-400 pointer-events-none " />
+                <FaUser className="text-xl self-center text-default-700 pointer-events-none " />
               }
             />
           </div>
@@ -92,10 +94,11 @@ export default function __signup() {
             color="primary"
             classNames={{
               innerWrapper: ['px-2'],
-              label: ['px-2', 'text-default-400'],
+              label: ['px-2', 'text-default-700'],
+              inputWrapper: ['border-white'],
             }}
             endContent={
-              <MdEmail className="text-2xl self-center text-default-400 pointer-events-none " />
+              <MdEmail className="text-2xl self-center text-default-700 pointer-events-none " />
             }
           />
 
@@ -107,7 +110,8 @@ export default function __signup() {
               color="primary"
               classNames={{
                 innerWrapper: ['px-2'],
-                label: ['px-2', 'text-default-400'],
+                label: ['px-2', 'text-default-700'],
+                inputWrapper: ['border-white'],
               }}
               endContent={
                 <button
@@ -116,9 +120,9 @@ export default function __signup() {
                   onClick={toggleVisibility}
                 >
                   {isVisible ? (
-                    <IoEye className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                    <IoEye className="text-2xl text-default-700 pointer-events-none self-center mb-2" />
                   ) : (
-                    <IoEyeOff className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                    <IoEyeOff className="text-2xl text-default-700 pointer-events-none self-center mb-2" />
                   )}
                 </button>
               }
@@ -132,7 +136,8 @@ export default function __signup() {
               color="primary"
               classNames={{
                 innerWrapper: ['px-2'],
-                label: ['px-2', 'text-default-400'],
+                label: ['px-2', 'text-default-700'],
+                inputWrapper: ['border-white'],
               }}
               endContent={
                 <button
@@ -141,9 +146,9 @@ export default function __signup() {
                   onClick={toggleCPVisibility}
                 >
                   {isCPVisible ? (
-                    <IoEye className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                    <IoEye className="text-2xl text-default-700 pointer-events-none self-center mb-2" />
                   ) : (
-                    <IoEyeOff className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                    <IoEyeOff className="text-2xl text-default-700 pointer-events-none self-center mb-2" />
                   )}
                 </button>
               }
