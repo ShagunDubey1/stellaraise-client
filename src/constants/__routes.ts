@@ -4,7 +4,6 @@ import { PiBuildingApartmentFill } from 'react-icons/pi'
 import { FaUserCog } from 'react-icons/fa'
 import { IconType } from 'react-icons'
 
-
 export interface SideBarRoutesType {
   tab: string
   path: string

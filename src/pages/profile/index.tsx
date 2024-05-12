@@ -1,6 +1,3 @@
-
 export default function __profile() {
-  return (
-    <div>__profile</div>
-  )
+  return <div>__profile</div>
 }

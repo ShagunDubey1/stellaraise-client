@@ -1,1 +1,1 @@
-export * from './__routes';
+export * from './__routes'

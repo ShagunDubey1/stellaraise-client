@@ -37,7 +37,12 @@ const __tabOptions = ({
             : 'text-light-primary'
         }`}
       >
-        {<tab.icons size={20} color={activeTab === tab.tab ? '#BEF264': '#ffffff'} />}
+        {
+          <tab.icons
+            size={20}
+            color={activeTab === tab.tab ? '#BEF264' : '#ffffff'}
+          />
+        }
         {tab.tab}
       </span>
     </NavLink>

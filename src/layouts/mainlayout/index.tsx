@@ -14,7 +14,7 @@ const __mainLayout = () => {
       <Sidebar sideBarOpen={sideBarOpen} />
       <div className={`flex flex-1 flex-col overflow-hidden`}>
         <Header
-          // toggleSideBar={toggleSideBar}
+        // toggleSideBar={toggleSideBar}
         />
         <Outlet />
       </div>

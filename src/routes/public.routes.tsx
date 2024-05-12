@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom";
-import { Campaign, Home, Login, Organization, Profile, Signup } from "../pages";
-import { MainLayout } from "../layouts";
+import { Route, Routes } from 'react-router-dom'
+import { Campaign, Home, Login, Organization, Profile, Signup } from '../pages'
+import { MainLayout } from '../layouts'
 
 export default function PublicRoutes() {
   return (

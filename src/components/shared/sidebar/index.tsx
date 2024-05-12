@@ -17,7 +17,7 @@ const __sideBar = ({ sideBarOpen }: SideBarProps) => {
       >
         <div className=" w-full py-8  flex justify-center items-center flex-col gap-2">
           {/* <img src={Logo_Icon} alt="logo icon" /> */}
-          <h1>Stellarraise</h1>
+          <h1>Stellaraise</h1>
         </div>
 
         <hr className=" border-gray-200 h-[0.2px]" />
@@ -38,10 +38,9 @@ const __sideBar = ({ sideBarOpen }: SideBarProps) => {
         className={` bg-sidebar min-h-[100vh] top-0 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? 'translate-x-0 w-[200px]' : '-translate-x-full w-0'}`}
       >
         <div className=" w-full px-6 py-8 flex items-center gap-2">
-          <img src={Logo} alt="logo icon" className=' h-7 w-7'/>
-          <h1 className=' text-white text-xl from-content4'>StellaRRaise</h1>
+          <img src={Logo} alt="logo icon" className=" h-7 w-7" />
+          <h1 className=" text-white text-xl from-content4">Stellaraise</h1>
         </div>
-
 
         <nav
           className={` w-full flex flex-col px-2 gap-1 py-1 transition-all ease-in-out duration-500 ${!sideBarOpen ? ' -translate-x-[1500%] ' : 'translate-x-0 '}`}

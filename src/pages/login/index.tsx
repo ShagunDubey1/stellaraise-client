@@ -11,12 +11,15 @@ export default function __login() {
 
   return (
     <div className=" w-full relative flex justify-center items-center h-full">
-      <div className=' border border-primary rounded-3xl px-10 py-10'>
+      <div className=" border border-primary rounded-3xl px-10 py-10">
         <h2 className=" text-4xl font-semibold mb-6">
           Log In <br /> in your account<span className=" text-primary">.</span>
         </h2>
 
-        <form action="" className=" w-[23rem] flex flex-col justify-center gap-4">
+        <form
+          action=""
+          className=" w-[23rem] flex flex-col justify-center gap-4"
+        >
           <Input
             type="text"
             label="Email"

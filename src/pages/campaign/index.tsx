@@ -1,6 +1,3 @@
-
 export default function __campaign() {
-  return (
-    <div>__campaign</div>
-  )
+  return <div>__campaign</div>
 }

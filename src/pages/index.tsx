@@ -11,5 +11,5 @@ export {
   __home as Home,
   __organization as Organization,
   __profile as Profile,
-  __campaign as Campaign
+  __campaign as Campaign,
 }

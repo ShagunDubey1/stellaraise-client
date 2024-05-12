@@ -1,4 +1,4 @@
-interface SignupProps{
+interface SignupProps {
   firstName: string
   lastName: string
   email: string

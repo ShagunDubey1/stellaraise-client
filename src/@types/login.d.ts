@@ -1,3 +1,1 @@
-interface LoginProps {
-  
-}
+interface LoginProps {}
