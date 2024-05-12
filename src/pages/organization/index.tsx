@@ -1,9 +1,17 @@
-import { Button, Card, CardFooter, CardHeader, Image } from '@nextui-org/react'
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Image,
+} from '@nextui-org/react'
+import { BsBuildingFillAdd } from 'react-icons/bs'
 
 export default function __organization() {
   return (
-    <div className=" flex relative items-start px-4">
-      <Card isFooterBlurred className=" h-[300px] col-span-12 sm:col-span-7">
+    <div className=" flex relative items-start px-4 gap-[1.6%]">
+      <Card isFooterBlurred className=" h-[300px] w-[32%]">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
             "Empowering Lives, Building Futures"
@@ -37,6 +45,19 @@ export default function __organization() {
             See Details
           </Button>
         </CardFooter>
+      </Card>
+
+      <Card className=" relative flex h-[300px] w-[32%] p-14">
+        <CardBody className=" border-1 border-opacity-30 border-white border-dashed rounded-lg flex justify-center items-center">
+          <Button
+            isIconOnly
+            variant="faded"
+            aria-label="Add Organization"
+            className=' w-[80px] h-[80px]'
+          >
+            <BsBuildingFillAdd size={40} className=" cursor-pointer" />
+          </Button>
+        </CardBody>
       </Card>
     </div>
   )
