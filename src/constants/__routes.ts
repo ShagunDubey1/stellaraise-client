@@ -18,7 +18,7 @@ export const SideBarTabs: SideBarRoutesType[] = [
     icons: FaHome,
   },
   {
-    tab: 'Campaign',
+    tab: 'Campaigns',
     path: '/campaign',
     icons: BsCalendar2EventFill,
   },

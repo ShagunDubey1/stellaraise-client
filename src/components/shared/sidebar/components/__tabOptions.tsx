@@ -12,7 +12,6 @@ const __tabOptions = ({
   setActiveTab: React.Dispatch<React.SetStateAction<string>>
 }) => {
   const [pathName, setPathName] = useState<string>(tab.path)
-  // console.log(pathName)
   const location = useLocation()
 
   useEffect(() => {
@@ -22,24 +21,23 @@ const __tabOptions = ({
   return (
     <NavLink
       to={tab.path}
-      className={`relative border-solid group transition-all duration-30 ${
+      className={`relative border-solid group transition-all duration-30 py-1 ${
         pathName !== '/profile' && activeTab === tab.tab
           ? 'bg-opacity-10 bg-light-primary rounded-sm '
           : ''
       }`}
       onClick={() => {
-        // setPathName(tab.path)
         setActiveTab(tab.tab)
       }}
     >
       <span
-        className={`relative flex items-center text-sm px-3 transition-all duration-30 py-[0.9rem] gap-4 font-bold ${
-          pathName !== '/profile' && activeTab !== tab.tab
-            ? 'group-hover:bg-light-primary group-hover:bg-opacity-10 group-hover:text-light-primary text-light-primary'
-            : pathName !== '/profile' && activeTab === tab.tab ? 'text-light-primary' : ''
-        } ${activeTab !== tab.tab && pathName === '/profile' ? 'group-hover:bg-light-primary group-hover:bg-opacity-10  group-hover:text-light-primary text-text-primary' : 'text-text-primary'}`}
+        className={`relative flex items-center text-base px-3 transition-all duration-30 py-[0.9rem] gap-3  ${
+          activeTab === tab.tab
+            ? ' border-[#BEF264] border-solid border-r-large rounded-s-sm group-hover:text-light-primary text-text'
+            : 'text-light-primary'
+        }`}
       >
-        {<tab.icons />}
+        {<tab.icons size={20} color={activeTab === tab.tab ? '#BEF264': '#ffffff'} />}
         {tab.tab}
       </span>
     </NavLink>

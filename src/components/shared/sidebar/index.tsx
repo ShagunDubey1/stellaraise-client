@@ -1,6 +1,7 @@
 import { TabIconOptions, TabOptions } from './components'
 import { useState } from 'react'
 import { SideBarTabs } from '../../../constants'
+import { Logo } from '../../../assets/images'
 
 interface SideBarProps {
   sideBarOpen: boolean
@@ -32,17 +33,15 @@ const __sideBar = ({ sideBarOpen }: SideBarProps) => {
           ))}
         </nav>
       </section>
-      {/* ======================== */}
+      {/* ===============large screen========= */}
       <section
-        className={` bg-sidebar min-h-[100vh] top-0 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? 'translate-x-0 w-[224px]' : '-translate-x-full w-0'}`}
+        className={` bg-sidebar min-h-[100vh] top-0 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? 'translate-x-0 w-[200px]' : '-translate-x-full w-0'}`}
       >
-        <div className=" w-full px-6 py-4 flex justify-center items-center flex-col gap-2">
-          {/* <img src={Logo_Icon} alt="logo icon" />
-          <img src={Logo} alt="logo " className=" w-[6rem]" /> */}
-          <h1>Stellarraise</h1>
+        <div className=" w-full px-6 py-8 flex items-center gap-2">
+          <img src={Logo} alt="logo icon" className=' h-7 w-7'/>
+          <h1 className=' text-white text-xl from-content4'>StellaRRaise</h1>
         </div>
 
-        <hr className=" border-gray-200 h-[0.2px]" />
 
         <nav
           className={` w-full flex flex-col px-2 gap-1 py-1 transition-all ease-in-out duration-500 ${!sideBarOpen ? ' -translate-x-[1500%] ' : 'translate-x-0 '}`}

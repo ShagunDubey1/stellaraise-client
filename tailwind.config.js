@@ -28,9 +28,10 @@ export default {
             },
           },
           colors: {
+            text: '#bfbfbf',
             white: '#FFFFFF',
             black: '#000000',
-            sidebar: '#141415',
+            sidebar: '#1E1E1F',
             background: '#232326',
             foreground: '#ECEDEE',
             primary: {
