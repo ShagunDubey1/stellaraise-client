@@ -30,6 +30,7 @@ export default {
           colors: {
             white: '#FFFFFF',
             black: '#000000',
+            sidebar: '#141415',
             background: '#232326',
             foreground: '#ECEDEE',
             primary: {

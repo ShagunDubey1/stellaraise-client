@@ -12,7 +12,7 @@ const __sideBar = ({ sideBarOpen }: SideBarProps) => {
   return (
     <>
       <section
-        className={` bg-[#F7F8F9] min-h-[100vh] top-0 px-2 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? '-translate-x-full hidden ' : 'translate-x-0 '}`}
+        className={` bg-sidebar min-h-[100vh] top-0 px-2 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? '-translate-x-full hidden ' : 'translate-x-0 '}`}
       >
         <div className=" w-full py-8  flex justify-center items-center flex-col gap-2">
           {/* <img src={Logo_Icon} alt="logo icon" /> */}
@@ -34,11 +34,12 @@ const __sideBar = ({ sideBarOpen }: SideBarProps) => {
       </section>
       {/* ======================== */}
       <section
-        className={` bg-[#F7F8F9] min-h-[100vh] top-0 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? 'translate-x-0 w-[224px]' : '-translate-x-full w-0'}`}
+        className={` bg-sidebar min-h-[100vh] top-0 flex-shrink-0 transition-all ease-in-out duration-500 ${sideBarOpen ? 'translate-x-0 w-[224px]' : '-translate-x-full w-0'}`}
       >
         <div className=" w-full px-6 py-4 flex justify-center items-center flex-col gap-2">
-          <img src={Logo_Icon} alt="logo icon" />
-          <img src={Logo} alt="logo " className=" w-[6rem]" />
+          {/* <img src={Logo_Icon} alt="logo icon" />
+          <img src={Logo} alt="logo " className=" w-[6rem]" /> */}
+          <h1>Stellarraise</h1>
         </div>
 
         <hr className=" border-gray-200 h-[0.2px]" />
