@@ -4,6 +4,7 @@ import __home from './home'
 import __profile from './profile'
 import __organization from './organization'
 import __campaign from './campaign'
+import __rewards from './rewards'
 
 export {
   __login as Login,
@@ -12,4 +13,5 @@ export {
   __organization as Organization,
   __profile as Profile,
   __campaign as Campaign,
+  __rewards as Rewards
 }

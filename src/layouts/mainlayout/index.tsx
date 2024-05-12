@@ -5,9 +5,9 @@ import { useState } from 'react'
 const __mainLayout = () => {
   const [sideBarOpen, setSideBarOpen] = useState<boolean>(true)
 
-  const toggleSideBar = (): void => {
-    setSideBarOpen(!sideBarOpen)
-  }
+  // const toggleSideBar = (): void => {
+  //   setSideBarOpen(!sideBarOpen)
+  // }
 
   return (
     <div className=" w-full relative flex">

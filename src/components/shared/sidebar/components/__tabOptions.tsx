@@ -33,7 +33,7 @@ const __tabOptions = ({
       <span
         className={`relative flex items-center text-base px-3 transition-all duration-30 py-[0.9rem] gap-3  ${
           activeTab === tab.tab
-            ? ' border-[#BEF264] border-solid border-r-large rounded-s-sm group-hover:text-light-primary text-text'
+            ? ' border-[#BEF264] border-solid border-l-large rounded-s-sm group-hover:text-light-primary text-text'
             : 'text-light-primary'
         }`}
       >

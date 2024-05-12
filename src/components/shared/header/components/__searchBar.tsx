@@ -7,7 +7,7 @@ export default function __searchBar() {
 
   return (
     <div
-      className={`relative w-[40%] flex flex-row items-center justify-center bg-sidebar rounded-xl h-11`}
+      className={`relative w-[40%] flex flex-row items-center justify-center bg-sidebar rounded-xl h-11 shadow-md border-white border-[0.2px] border-opacity-30`}
     >
       <span className="relative px-3 flex items-center justify-center">
         <IoSearch color="rgba(255, 255, 255, 0.5)" />

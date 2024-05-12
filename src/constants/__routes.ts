@@ -3,6 +3,7 @@ import { BsCalendar2EventFill } from 'react-icons/bs'
 import { PiBuildingApartmentFill } from 'react-icons/pi'
 import { FaUserCog } from 'react-icons/fa'
 import { IconType } from 'react-icons'
+import { GiDiamondTrophy } from 'react-icons/gi'
 
 export interface SideBarRoutesType {
   tab: string
@@ -25,6 +26,11 @@ export const SideBarTabs: SideBarRoutesType[] = [
     tab: 'Organization',
     path: '/organization',
     icons: PiBuildingApartmentFill,
+  },
+  {
+    tab: 'Rewards',
+    path: '/rewards',
+    icons: GiDiamondTrophy,
   },
   {
     tab: 'Profile',

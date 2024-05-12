@@ -35,7 +35,7 @@ export default {
             background: '#232326',
             foreground: '#ECEDEE',
             primary: {
-              DEFAULT: '#BEF264',
+              DEFAULT: '#b4da61',
               foreground: '#000000',
             },
             focus: '#BEF264',
