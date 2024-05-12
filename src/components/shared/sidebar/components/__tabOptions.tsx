@@ -39,7 +39,7 @@ const __tabOptions = ({
       >
         {
           <tab.icons
-            size={20}
+            size={18}
             color={activeTab === tab.tab ? '#BEF264' : '#ffffff'}
           />
         }
