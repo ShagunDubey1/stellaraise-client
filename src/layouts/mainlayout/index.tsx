@@ -10,7 +10,7 @@ const __mainLayout = () => {
   }
 
   return (
-    <div className=" w-full relative flex bg-[#F0F2F5]">
+    <div className=" w-full relative flex">
       <Sidebar sideBarOpen={sideBarOpen} />
       <div className={`flex flex-1 flex-col overflow-hidden`}>
         <Header

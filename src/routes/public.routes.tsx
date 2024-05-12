@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, Login, Organization, Profile, Signup } from "../pages";
+import { Campaign, Home, Login, Organization, Profile, Signup } from "../pages";
 import { MainLayout } from "../layouts";
 
 export default function PublicRoutes() {
@@ -13,7 +13,7 @@ export default function PublicRoutes() {
           <Route path={'/'} element={<Home />} index />
           <Route path={'/profile'} element={<Profile />} />
           <Route path={'/organization'} element={<Organization />} />
-          <Route path={'/campaign'} element={<TeamDepartment />} />
+          <Route path={'/campaign'} element={<Campaign />} />
         </Route>
       </Routes>
     </>
