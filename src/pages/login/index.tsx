@@ -2,7 +2,6 @@ import { Button, Input } from '@nextui-org/react'
 import { useState } from 'react'
 import { MdEmail } from 'react-icons/md'
 import { IoEye, IoEyeOff } from 'react-icons/io5'
-import { FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 export default function __login() {
@@ -11,13 +10,13 @@ export default function __login() {
   const toggleVisibility = () => setIsVisible(!isVisible)
 
   return (
-    <div className=" w-full relative flex justify-center gap-16 items-center h-full">
-      <div>
-        <h2 className=" text-5xl font-semibold mb-6">
-          Create <br /> new account<span className=" text-primary">.</span>
+    <div className=" w-full relative flex justify-center items-center h-full">
+      <div className=' border border-primary rounded-3xl px-10 py-10'>
+        <h2 className=" text-4xl font-semibold mb-6">
+          Log In <br /> in your account<span className=" text-primary">.</span>
         </h2>
 
-        <form action="" className=" w-full flex flex-col justify-center gap-4">
+        <form action="" className=" w-[23rem] flex flex-col justify-center gap-4">
           <Input
             type="text"
             label="Email"
@@ -33,7 +32,7 @@ export default function __login() {
             }
           />
           <Input
-            label="First Name"
+            label="Password"
             variant="bordered"
             radius="lg"
             color="primary"
@@ -58,9 +57,9 @@ export default function __login() {
           />
 
           <p className=" font-bold text-white self-end">
-            Don't have an Account?{' '}
-            <Link to={'/login'} className=" text-primary">
-              Log in
+            Already have an Account?{' '}
+            <Link to={'/signup'} className=" text-primary">
+              Sing Up
             </Link>
           </p>
 
@@ -70,7 +69,7 @@ export default function __login() {
             size="lg"
             className=" text-base font-semibold mt-4"
           >
-            Create Account
+            Log In
           </Button>
         </form>
       </div>

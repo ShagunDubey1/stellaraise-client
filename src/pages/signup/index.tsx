@@ -7,8 +7,10 @@ import { Link } from 'react-router-dom'
 
 export default function __signup() {
   const [isVisible, setIsVisible] = useState(false)
+  const [isCPVisible, setIsCPVisible] = useState(false)
 
   const toggleVisibility = () => setIsVisible(!isVisible)
+  const toggleCPVisibility = () => setIsCPVisible(!isCPVisible)
 
   return (
     <div className=" w-full relative flex justify-center gap-16 items-center h-full">
@@ -96,30 +98,58 @@ export default function __signup() {
               <MdEmail className="text-2xl self-center text-default-400 pointer-events-none " />
             }
           />
-          <Input
-            label="First Name"
-            variant="bordered"
-            radius="lg"
-            color="primary"
-            classNames={{
-              innerWrapper: ['px-2'],
-              label: ['px-2', 'text-default-400'],
-            }}
-            endContent={
-              <button
-                className="focus:outline-none"
-                type="button"
-                onClick={toggleVisibility}
-              >
-                {isVisible ? (
-                  <IoEye className="text-2xl text-default-400 pointer-events-none self-center" />
-                ) : (
-                  <IoEyeOff className="text-2xl text-default-400 pointer-events-none self-center" />
-                )}
-              </button>
-            }
-            type={isVisible ? 'text' : 'password'}
-          />
+
+          <div className=" w-full flex items-center justify-center gap-4">
+            <Input
+              label="Password"
+              variant="bordered"
+              radius="lg"
+              color="primary"
+              classNames={{
+                innerWrapper: ['px-2'],
+                label: ['px-2', 'text-default-400'],
+              }}
+              endContent={
+                <button
+                  className="focus:outline-none"
+                  type="button"
+                  onClick={toggleVisibility}
+                >
+                  {isVisible ? (
+                    <IoEye className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                  ) : (
+                    <IoEyeOff className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                  )}
+                </button>
+              }
+              type={isVisible ? 'text' : 'password'}
+            />
+
+            <Input
+              label="Comfirm Password"
+              variant="bordered"
+              radius="lg"
+              color="primary"
+              classNames={{
+                innerWrapper: ['px-2'],
+                label: ['px-2', 'text-default-400'],
+              }}
+              endContent={
+                <button
+                  className="focus:outline-none"
+                  type="button"
+                  onClick={toggleCPVisibility}
+                >
+                  {isCPVisible ? (
+                    <IoEye className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                  ) : (
+                    <IoEyeOff className="text-2xl text-default-400 pointer-events-none self-center mb-2" />
+                  )}
+                </button>
+              }
+              type={isVisible ? 'text' : 'password'}
+            />
+          </div>
 
           <p className=" font-bold text-white self-end">
             Already a Member?{' '}
